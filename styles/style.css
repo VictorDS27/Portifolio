@@ -29,11 +29,11 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background: transparent;
+    background: var(--bg_bege);
 }
 
 html::-webkit-scrollbar-thumb{
-    background: #fff;
+    background: var(--green);
     border-radius: .5rem;
 }
 
@@ -85,7 +85,7 @@ section{
 }
 
 .header .icons div{
-    color: #fff;
+    color: var(--dark_green);
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
@@ -178,6 +178,88 @@ section{
     width: 4rem;
 }
 
+/*************** Skills *************/
+
+.skills{
+    padding-top: 10rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg_bege);
+}
+
+.skills .content h3{
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 5rem;
+}
+
+.skills .content span{
+    color: var(--dark_green);
+}
+
+.skills .content .skills_row{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 1px var(--green);
+    width: 500px;
+    padding: 4rem;
+}
+
+.skills .content .skills_row .skills-container{
+    padding-top: 2rem;
+}
+
+.skills .content .skills_row .skills-container .skills-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills .content .skills_row .skills-container .skills-text p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--green);
+}
+
+.skills .content .skills_row .skills-container .row{
+    width: 100%;
+    height: 1rem;
+    background-color: var(--green);
+    border-radius: 20px;
+}
+
+.skills .content .skills_row .skills-container .row .html-porcentagem, .figma-porcentagem{
+    width: 90%;
+    height: 1rem;
+    background-color: var(--dark_green);
+    border-radius: 20px;
+}
+
+.skills .content .skills_row .skills-container .row .css-porcentagem, .bootstrap-porcentagem{
+    width: 85%;
+    height: 1rem;
+    background-color: var(--dark_green);
+    border-radius: 20px;
+}
+
+.skills .content .skills_row .skills-container .row .javascript-porcentagem{
+    width: 70%;
+    height: 1rem;
+    background-color: var(--dark_green);
+    border-radius: 20px;
+}
+
+.skills .content .skills_row .skills-container .row .reactjs-porcentagem{
+    width: 80%;
+    height: 1rem;
+    background-color: var(--dark_green);
+    border-radius: 20px;
+}
+
+
 @media (max-width:991px){
     html{
         font-size: 55%;
@@ -203,7 +285,7 @@ section{
     .header .navbar{
         position: absolute;
         top:100%; right: -100%;
-        background: #fff;
+        background: var(--bg_bege);
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
@@ -228,6 +310,18 @@ section{
 
     .home .content p{
         color: var(--green);
+    }
+
+
+    /* Skills */
+
+    .skills .content .skills_row{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: solid 1px var(--green);
+        width: 100%;
+        padding: 4rem;
     }
 
 }
