@@ -17,6 +17,9 @@
     transition: .2s linear;
 }
 
+body{
+    background-color: var(--bg_bege);
+}
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -184,9 +187,12 @@ section{
     padding-top: 10rem;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     background-color: var(--bg_bege);
 }
+
 
 .skills .content h3{
     font-size: 4rem;
@@ -257,6 +263,12 @@ section{
     height: 1rem;
     background-color: var(--dark_green);
     border-radius: 20px;
+}
+
+.wave{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 
