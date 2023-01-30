@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --bg_bege: #EDE8BB;
+    --dark_green: #124F3D ;
+    --green: #6E9F6F;
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    outline: none; border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: .5rem;
+}
+
+section{
+    padding: 2rem 7%;
+
+}
+
+
+/* HEADER */
+
+.header{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+    margin: 0 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--dark_green);
+}
+
+.header .navbar a:hover{
+    color: var(--green);
+    border-bottom: .1rem solid var(--green);
+    padding-bottom: .5rem;
+}
+
+.header .navbar .Button-Contact{
+    text-align: center;
+    background-color: var(--green);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.header .navbar .Button-Contact:hover{
+    box-shadow: 14px 10px 17px -9px rgba(0,0,0,0.75);
+    color: var(--bg_bege);
+    border-bottom: none !important;
+    padding-bottom: 1rem;
+}
+
+.header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color: var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+
+
+/* Home */
+
+.home{
+    padding-top: 2rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: url(../img/background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+    align-items: center;
+    text-align: center;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--green);
+}
+
+.home .content span{
+    color: var(--dark_green);
+}
+
+.home .content p{
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #13513D;
+    margin-bottom: 2rem;
+}
+
+.home .content .btn-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+.home .content .btn{
+    text-align: center;
+    background-color: var(--green);
+    padding: 1.6rem;
+    width: 40%;
+    border-radius: 30px;
+    color: var(--bg_bege);
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.home .content .btn:hover{ 
+    color: var(--dark_green);
+    
+}
+
+.home .content .social-midia-container{
+    display: flex;
+    width: 100%;
+    padding: 0 6rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.home .content .social-midia-container img{
+    cursor: pointer;
+    margin: 0 2rem;
+    width: 4rem;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    
+    }
+}
+
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+
+    .header .navbar a{
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+        color: var(--dark_green)
+    }
+
+
+    .home .content span{
+        color: var(--green);
+    }
+
+    .home .content p{
+        color: var(--green);
+    }
+
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+        
+    }
+}
