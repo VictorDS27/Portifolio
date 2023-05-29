@@ -272,6 +272,115 @@ section{
 }
 
 
+
+    /************ Projetos *************/
+
+
+    .projetos{
+        background-color: var(--green);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .projetos h3{
+        font-size: 4rem;
+        text-align: center;
+        color: #13513D;
+        margin-bottom: 5rem;
+    }
+    
+    .projetos span{
+        color: #0A3C30;
+    }
+    
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container .card{
+        align-items: center;
+        padding: 1rem;
+        background-color: #EDE8BB;
+        flex: 150px;
+        margin: 3rem;
+    }
+
+    .container .card:hover{
+        box-shadow: 20px 10px 17px -4px rgba(1, 37, 12, 0.685);
+    }
+
+    .container .card img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 300px;
+    }
+
+    .container .card .card-body{
+        padding: 1rem;
+    }
+
+    .container .card .card-body h2{
+        text-align: center;
+        font-size: 1.8rem;
+        color: var(--dark_green);
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    .container .card .card-body p{
+        color: #124F3D;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .container .card .card-body p:nth-child(4){
+        margin-bottom: 3rem;
+    }
+
+
+    .container .card .card-body .card-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .card .card-body .card-footer a{
+        padding: 1rem 2rem;
+        background-color: #6E9F6F;
+        color: #EDE8BB;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border-radius: 20px;
+    }
+
+    .container .card .card-body .card-footer a:hover{
+        box-shadow: 14px 10px 17px -9px rgba(0,0,0,0.75);
+    }
+
+
+
+    @media (max-width:1325px){
+        .container .card img{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 350px;
+        }
+
+    }
+
+
 @media (max-width:991px){
     html{
         font-size: 55%;
